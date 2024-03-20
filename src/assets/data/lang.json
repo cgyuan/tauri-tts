@@ -1,0 +1,770 @@
+[
+  {
+    "lang": "zh-CN",
+    "name": "中文(普通话，简体)",
+    "voices": [
+      {
+        "id": "zh-CN-XiaoxiaoNeural",
+        "name": "Xiaoxiao-晓晓"
+      },
+      {
+        "id": "zh-CN-YunjianNeural",
+        "name": "Yunjian-云健"
+      },
+      {
+        "id": "zh-CN-XiaoyiNeural",
+        "name": "Xiaoyi-晓伊"
+      },
+      {
+        "id": "zh-CN-YunxiNeural",
+        "name": "Yunxi-云希"
+      },
+      {
+        "id": "zh-CN-YunxiaNeural",
+        "name": "Yunxia-云夏"
+      },
+      {
+        "id": "zh-CN-YunyangNeural",
+        "name": "Yunyang-云扬"
+      }
+    ]
+  },
+  {
+    "lang": "zh-HK",
+    "name": "中文(香港粤语)",
+    "voices": [
+      {
+        "id": "zh-HK-HiuGaaiNeural",
+        "name": "HiuGaai-曉佳"
+      },
+      {
+        "id": "zh-HK-WanLungNeural",
+        "name": "WanLung-雲龍"
+      },
+      {
+        "id": "zh-HK-HiuMaanNeural",
+        "name": "HiuMaan-曉曼"
+      }
+    ]
+  },
+  {
+    "lang": "zh-CN-liaoning",
+    "name": "中文(东北官话)",
+    "voices": [
+      {
+        "id": "zh-CN-liaoning-XiaobeiNeural",
+        "name": "Xiaobei-晓北"
+      }
+    ]
+  },
+  {
+    "lang": "zh-TW",
+    "name": "中文(台湾普通话)",
+    "voices": [
+      {
+        "id": "zh-TW-HsiaoChenNeural",
+        "name": "HsiaoChen-晓臻"
+      },
+      {
+        "id": "zh-TW-YunJheNeural",
+        "name": "YunJhe-云哲"
+      },
+      {
+        "id": "zh-TW-HsiaoYuNeural",
+        "name": "HsiaoYu-晓雨"
+      }
+    ]
+  },
+  {
+    "lang": "zh-CN-shaanxi",
+    "name": "中文(陕西话)",
+    "voices": [
+      {
+        "id": "zh-CN-shaanxi-XiaoniNeural",
+        "name": "Xiaoxuan-晓妮"
+      }
+    ]
+  },
+  {
+    "lang": "en-US",
+    "name": "英语(美国)",
+    "voices": [
+      {
+        "id": "en-US-MichelleNeural",
+        "name": "Michelle-米歇尔"
+      },
+      {
+        "id": "en-US-JennyNeural",
+        "name": "Jenny-珍妮"
+      },
+      {
+        "id": "en-US-AnaNeural",
+        "name": "Ana-安娜"
+      },
+      {
+        "id": "en-US-SteffanNeural",
+        "name": "Steffan-斯特凡"
+      },
+      {
+        "id": "en-US-RogerNeural",
+        "name": "Roger-罗杰"
+      },
+      {
+        "id": "en-US-EricNeural",
+        "name": "Eric-埃里克"
+      },
+      {
+        "id": "en-US-AriaNeural",
+        "name": "Aria-阿里亚"
+      },
+      {
+        "id": "en-US-GuyNeural",
+        "name": "Guy-盖伊"
+      },
+      {
+        "id": "en-US-ChristopherNeural",
+        "name": "Christopher-克里斯托弗"
+      }
+    ]
+  },
+  {
+    "lang": "en-GB",
+    "name": "英语(英国)",
+    "voices": [
+      {
+        "id": "en-GB-LibbyNeural",
+        "name": "Libby-莉比"
+      },
+      {
+        "id": "en-GB-RyanNeural",
+        "name": "Ryan-莱恩"
+      },
+      {
+        "id": "en-GB-MaisieNeural",
+        "name": "Maisie-梅西"
+      },
+      {
+        "id": "en-GB-SoniaNeural",
+        "name": "Sonia-索尼娅"
+      },
+      {
+        "id": "en-GB-ThomasNeural",
+        "name": "Thomas-托马斯"
+      }
+    ]
+  },
+  {
+    "lang": "en-HK",
+    "name": "英语(香港)",
+    "voices": [
+      {
+        "id": "en-HK-SamNeural",
+        "name": "Sam-山姆"
+      },
+      {
+        "id": "en-HK-YanNeural",
+        "name": "Yan-言"
+      }
+    ]
+  },
+  {
+    "lang": "en-IN",
+    "name": "英语(印度)",
+    "voices": [
+      {
+        "id": "en-IN-NeerjaNeural",
+        "name": "Neerja-尼尔贾"
+      },
+      {
+        "id": "en-IN-PrabhatNeural",
+        "name": "Prabhat-普拉巴特"
+      }
+    ]
+  },
+  {
+    "lang": "vi-VN",
+    "name": "越南语",
+    "voices": [
+      {
+        "id": "vi-VN-HoaiMyNeural",
+        "name": "HoaiMy-怀米"
+      },
+      {
+        "id": "vi-VN-NamMinhNeural",
+        "name": "NamMinh-南明"
+      }
+    ]
+  },
+  {
+    "lang": "th-TH",
+    "name": "泰语",
+    "voices": [
+      {
+        "id": "th-TH-PremwadeeNeural",
+        "name": "Premwadee-普蕾玛蒂"
+      },
+      {
+        "id": "th-TH-NiwatNeural",
+        "name": "Niwat-尼瓦特"
+      }
+    ]
+  },
+  {
+    "lang": "ta-MY",
+    "name": "泰米尔语(马来西亚)",
+    "voices": [
+      {
+        "id": "ta-MY-KaniNeural",
+        "name": "Kani-卡尼"
+      },
+      {
+        "id": "ta-MY-SuryaNeural",
+        "name": "Surya-苏里亚"
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "name": "泰米尔语(印度)",
+    "voices": [
+      {
+        "id": "ta-IN-PallaviNeural",
+        "name": "Pallavi-帕拉维"
+      },
+      {
+        "id": "ta-IN-ValluvarNeural",
+        "name": "Valluvar-瓦鲁瓦"
+      }
+    ]
+  },
+  {
+    "lang": "ru-RU",
+    "name": "俄语",
+    "voices": [
+      {
+        "id": "ru-RU-SvetlanaNeural",
+        "name": "Svetlana-斯维特兰娜"
+      },
+      {
+        "id": "ru-RU-DmitryNeural",
+        "name": "Dmitry-德米特里"
+      }
+    ]
+  },
+  {
+    "lang": "ko-KR",
+    "name": "韩语",
+    "voices": [
+      {
+        "id": "ko-KR-SunHiNeural",
+        "name": "SunHi-孙喜"
+      },
+      {
+        "id": "ko-KR-InJoonNeural",
+        "name": "InJoon-仁俊"
+      }
+    ]
+  },
+  {
+    "lang": "ja-JP",
+    "name": "日语",
+    "voices": [
+      {
+        "id": "ja-JP-NanamiNeural",
+        "name": "Nanami-七海"
+      },
+      {
+        "id": "ja-JP-KeitaNeural",
+        "name": "Keita-圭太"
+      }
+    ]
+  },
+  {
+    "lang": "it-IT",
+    "name": "意大利语",
+    "voices": [
+      {
+        "id": "it-IT-ElsaNeural",
+        "name": "Elsa-艾尔莎"
+      },
+      {
+        "id": "it-IT-DiegoNeural",
+        "name": "Diego-迭戈"
+      }
+    ]
+  },
+  {
+    "lang": "id-ID",
+    "name": "印度尼西亚语",
+    "voices": [
+      {
+        "id": "id-ID-GadisNeural",
+        "name": "Gadis-嘎迪丝"
+      },
+      {
+        "id": "id-ID-ArdiNeural",
+        "name": "Ardi-阿尔迪"
+      }
+    ]
+  },
+  {
+    "lang": "fr-FR",
+    "name": "法语",
+    "voices": [
+      {
+        "id": "fr-FR-DeniseNeural",
+        "name": "Denise-丹尼斯"
+      },
+      {
+        "id": "fr-FR-HenriNeural",
+        "name": "Henri-亨利"
+      }
+    ]
+  },
+  {
+    "lang": "fa-IR",
+    "name": "波斯语",
+    "voices": [
+      {
+        "id": "fa-IR-DilaraNeural",
+        "name": "Dilara-迪拉拉"
+      },
+      {
+        "id": "fa-IR-FaridNeural",
+        "name": "Farid-法里德"
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "name": "西班牙语",
+    "voices": [
+      {
+        "id": "es-ES-AlvaroNeural",
+        "name": "Alvaro-阿尔瓦罗"
+      },
+      {
+        "id": "es-ES-ElviraNeural",
+        "name": "Elvira-艾尔维拉"
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "name": "阿拉伯语(阿联酋)",
+    "voices": [
+      {
+        "id": "ar-AE-FatimaNeural",
+        "name": "Fatima-法蒂玛"
+      },
+      {
+        "id": "ar-AE-HamdanNeural",
+        "name": "Hamdan-哈姆丹"
+      }
+    ]
+  },
+  {
+    "lang": "de-DE",
+    "name": "德语",
+    "voices": [
+      {
+        "id": "de-DE-KatjaNeural",
+        "name": "Katja-卡佳"
+      },
+      {
+        "id": "de-DE-AmalaNeural",
+        "name": "Amala-阿玛拉"
+      },
+      {
+        "id": "de-DE-KillianNeural",
+        "name": "Killian-基利安"
+      },
+      {
+        "id": "de-DE-ConradNeural",
+        "name": "Conrad-康拉德"
+      }
+    ]
+  },
+  {
+    "lang": "el-GR",
+    "name": "希腊语",
+    "voices": [
+      {
+        "id": "el-GR-AthinaNeural",
+        "name": "Athina-阿蒂娜"
+      },
+      {
+        "id": "el-GR-NestorasNeural",
+        "name": "Nestoras-内斯托拉斯"
+      }
+    ]
+  },
+  {
+    "lang": "cs-CZ",
+    "name": "捷克语",
+    "voices": [
+      {
+        "id": "cs-CZ-AntoninNeural",
+        "name": "Antonin-安东宁"
+      },
+      {
+        "id": "cs-CZ-VlastaNeural",
+        "name": "Vlasta-弗拉斯塔"
+      }
+    ]
+  },
+  {
+    "lang": "bn-BD",
+    "name": "孟加拉语",
+    "voices": [
+      {
+        "id": "bn-BD-NabanitaNeural",
+        "name": "Nabanita-娜巴妮塔"
+      },
+      {
+        "id": "bn-BD-PradeepNeural",
+        "name": "Pradeep-普拉迪普"
+      }
+    ]
+  },
+  {
+    "lang": "bg-BG",
+    "name": "保加利亚语",
+    "voices": [
+      {
+        "id": "bg-BG-KalinaNeural",
+        "name": "Kalina-卡丽娜"
+      },
+      {
+        "id": "bg-BG-BorislavNeural",
+        "name": "Borislav-博里斯拉夫"
+      }
+    ]
+  },
+  {
+    "lang": "az-AZ",
+    "name": "阿塞拜疆语",
+    "voices": [
+      {
+        "id": "az-AZ-BabekNeural",
+        "name": "Babek-巴贝克"
+      },
+      {
+        "id": "az-AZ-BanuNeural",
+        "name": "Banu-巴努"
+      }
+    ]
+  },
+  {
+    "lang": "uk-UA",
+    "name": "乌克兰语",
+    "voices": [
+      {
+        "id": "uk-UA-OstapNeural",
+        "name": "Ostap-奥斯塔普"
+      },
+      {
+        "id": "uk-UA-PolinaNeural",
+        "name": "Polina-波琳娜"
+      }
+    ]
+  },
+  {
+    "lang": "tr-TR",
+    "name": "土耳其语",
+    "voices": [
+      {
+        "id": "tr-TR-EmelNeural",
+        "name": "Emel-艾梅尔"
+      },
+      {
+        "id": "tr-TR-AhmetNeural",
+        "name": "Ahmet-阿赫梅特"
+      }
+    ]
+  },
+  {
+    "lang": "fil-PH",
+    "name": "菲律宾语",
+    "voices": [
+      {
+        "id": "fil-PH-AngeloNeural",
+        "name": "Angelo-安吉洛"
+      },
+      {
+        "id": "fil-PH-BlessicaNeural",
+        "name": "Blessica-布莱西卡"
+      }
+    ]
+  },
+  {
+    "lang": "fi-FI",
+    "name": "芬兰语",
+    "voices": [
+      {
+        "id": "fi-FI-NooraNeural",
+        "name": "Noora-诺拉"
+      },
+      {
+        "id": "fi-FI-HarriNeural",
+        "name": "Harri-哈里"
+      }
+    ]
+  },
+  {
+    "lang": "et-EE",
+    "name": "爱沙尼亚语",
+    "voices": [
+      {
+        "id": "et-EE-AnuNeural",
+        "name": "Anu-阿努"
+      },
+      {
+        "id": "et-EE-KertNeural",
+        "name": "Kert-克特"
+      }
+    ]
+  },
+  {
+    "lang": "nl-NL",
+    "name": "荷兰语",
+    "voices": [
+      {
+        "id": "nl-NL-ColetteNeural",
+        "name": "Colette-科莱特"
+      },
+      {
+        "id": "nl-NL-MaartenNeural",
+        "name": "Maarten-马尔滕"
+      },
+      {
+        "id": "nl-NL-FennaNeural",
+        "name": "Fenna-芬娜"
+      }
+    ]
+  },
+  {
+    "lang": "pt-PT",
+    "name": "葡萄牙语(葡萄牙)",
+    "voices": [
+      {
+        "id": "pt-PT-RaquelNeural",
+        "name": "Raquel-拉奎尔"
+      },
+      {
+        "id": "pt-PT-DuarteNeural",
+        "name": "Duarte-杜阿特"
+      }
+    ]
+  },
+  {
+    "lang": "pl-PL",
+    "name": "波兰语",
+    "voices": [
+      {
+        "id": "pl-PL-ZofiaNeural",
+        "name": "Zofia-佐菲亚"
+      },
+      {
+        "id": "pl-PL-MarekNeural",
+        "name": "Marek-马雷克"
+      }
+    ]
+  },
+  {
+    "lang": "ne-NP",
+    "name": "尼泊尔语",
+    "voices": [
+      {
+        "id": "ne-NP-SagarNeural",
+        "name": "Sagar-萨加尔"
+      },
+      {
+        "id": "ne-NP-HemkalaNeural",
+        "name": "Hemkala-海姆卡拉"
+      }
+    ]
+  },
+  {
+    "lang": "ms-MY",
+    "name": "马来语",
+    "voices": [
+      {
+        "id": "ms-MY-OsmanNeural",
+        "name": "Osman-奥斯曼"
+      },
+      {
+        "id": "ms-MY-YasminNeural",
+        "name": "Yasmin-亚斯敏"
+      }
+    ]
+  },
+  {
+    "lang": "ml-IN",
+    "name": "马拉雅拉姆语(印度)",
+    "voices": [
+      {
+        "id": "ml-IN-SobhanaNeural",
+        "name": "Sobhana-索布哈娜"
+      },
+      {
+        "id": "ml-IN-MidhunNeural",
+        "name": "Midhun-米杜恩"
+      }
+    ]
+  },
+  {
+    "lang": "mn-MN",
+    "name": "蒙古语",
+    "voices": [
+      {
+        "id": "mn-MN-YesuiNeural",
+        "name": "Yesui-叶绥"
+      },
+      {
+        "id": "mn-MN-BataaNeural",
+        "name": "Bataa-巴塔"
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "name": "马拉地语(印度)",
+    "voices": [
+      {
+        "id": "mr-IN-ManoharNeural",
+        "name": "Manohar-马诺哈尔"
+      },
+      {
+        "id": "mr-IN-AarohiNeural",
+        "name": "Aarohi-阿罗希"
+      }
+    ]
+  },
+  {
+    "lang": "my-MM",
+    "name": "缅甸语",
+    "voices": [
+      {
+        "id": "my-MM-NilarNeural",
+        "name": "Nilar-尼拉"
+      },
+      {
+        "id": "my-MM-ThihaNeural",
+        "name": "Thiha-提哈"
+      }
+    ]
+  },
+  {
+    "lang": "mt-MT",
+    "name": "马耳他语",
+    "voices": [
+      {
+        "id": "mt-MT-GraceNeural",
+        "name": "Grace-格蕾丝"
+      },
+      {
+        "id": "mt-MT-JosephNeural",
+        "name": "Joseph-约瑟夫"
+      }
+    ]
+  },
+  {
+    "lang": "mk-MK",
+    "name": "马其顿语",
+    "voices": [
+      {
+        "id": "mk-MK-AleksandarNeural",
+        "name": "Aleksandar-亚历山大"
+      },
+      {
+        "id": "mk-MK-MarijaNeural",
+        "name": "Marija-玛丽亚"
+      }
+    ]
+  },
+  {
+    "lang": "is-IS",
+    "name": "冰岛语",
+    "voices": [
+      {
+        "id": "is-IS-GudrunNeural",
+        "name": "Gudrun-古德伦"
+      },
+      {
+        "id": "is-IS-GunnarNeural",
+        "name": "Gunnar-冈纳尔"
+      }
+    ]
+  },
+  {
+    "lang": "hu-HU",
+    "name": "匈牙利语",
+    "voices": [
+      {
+        "id": "hu-HU-NoemiNeural",
+        "name": "Noemi-诺米"
+      },
+      {
+        "id": "hu-HU-TamasNeural",
+        "name": "Tamas-塔马斯"
+      }
+    ]
+  },
+  {
+    "lang": "hr-HR",
+    "name": "克罗地亚语",
+    "voices": [
+      {
+        "id": "hr-HR-GabrijelaNeural",
+        "name": "Gabrijela-加布里埃拉"
+      },
+      {
+        "id": "hr-HR-SreckoNeural",
+        "name": "Srecko-斯雷克"
+      }
+    ]
+  },
+  {
+    "lang": "ga-IE",
+    "name": "爱尔兰语",
+    "voices": [
+      {
+        "id": "ga-IE-ColmNeural",
+        "name": "Colm-科尔姆"
+      },
+      {
+        "id": "ga-IE-OrlaNeural",
+        "name": "Orla-奥拉"
+      }
+    ]
+  },
+  {
+    "lang": "da-DK",
+    "name": "丹麦语",
+    "voices": [
+      {
+        "id": "da-DK-JeppeNeural",
+        "name": "Jeppe-耶佩"
+      },
+      {
+        "id": "da-DK-ChristelNeural",
+        "name": "Christel-克里斯特尔"
+      }
+    ]
+  },
+  {
+    "lang": "zu-ZA",
+    "name": "祖鲁语",
+    "voices": [
+      {
+        "id": "zu-ZA-ThandoNeural",
+        "name": "Thando-坦多"
+      },
+      {
+        "id": "zu-ZA-ThembaNeural",
+        "name": "Themba-坦巴"
+      }
+    ]
+  }
+]
