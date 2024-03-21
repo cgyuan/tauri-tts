@@ -6,6 +6,7 @@ import { TTSEngine } from '../enums/appEnum';
 import { OPENAI_TTS_MODES, OPENAI_TTS_VOICES, SUPPORT_LANGS } from '../constant';
 import { useTTS } from '../hooks/useTTS';
 import ApiSettingPop from './ApiSettingPop.vue';
+import { Message } from '@arco-design/web-vue';
 
 const popVisible = ref(false);
 const isConverting = ref(false);
@@ -35,7 +36,7 @@ const startConvert = async () => {
     audioURL.value = URL.createObjectURL(blob);
     audioBlob.value = blob;
   } catch (error) {
-    console.log(error);
+    Message.error(error + '')
   }
 
   isConverting.value = false;
