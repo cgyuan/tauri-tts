@@ -40,14 +40,12 @@ export const useOpenAiTTS = () => {
   const speed = tts.value.openAiSpeed
 
   const processAudioText = (text: string) => {
-    return new Promise<string>((resolve, reject) => {
+    return new Promise<Blob>((resolve, reject) => {
       if (!settingStore.openAiProxy.proxyApiKey) {
         reject('请先设置 OpenAI API Key')
         return
       }
-      text2speech(text, model, voice, speed).then((blob) => {
-        resolve(URL.createObjectURL(blob))
-      }).catch(reject)
+      return resolve(text2speech(text, model, voice, speed))
     })
   }
   

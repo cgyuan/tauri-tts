@@ -3,23 +3,45 @@ import { useAppStore } from './store';
 import { storeToRefs } from 'pinia';
 import ParamsPanel from './components/ParamsPanel.vue';
 import Header from './components/Header.vue';
-import { is } from './utils';
-const { text, audioURL, headerHeight } = storeToRefs(useAppStore());
+import { blobToArrayBuffer, is } from './utils';
+import { dialog, invoke } from '@tauri-apps/api';
+const { text, audioURL, headerHeight, audioBlob } = storeToRefs(useAppStore());
 
-const downloadAudio = () => {
-  if (!audioURL.value) {
+const downloadAudio = async () => {
+  if (!audioURL.value || !audioBlob.value) {
     return
   }
-  const link = document.createElement('a');
-  link.href = audioURL.value;
-  link.download = Date.now() + '.mp3';
-  link.click();
-  link.remove();
+  const filename = Date.now() + '.mp3'
+  if (is.desktop()) {
+    const filePath = await dialog.save({
+      defaultPath: filename,
+      filters: [{
+        name: 'MP3',
+        extensions: ['mp3'],
+      }],
+    });
+    if (!filePath) return
+    const arrayBuffer = await blobToArrayBuffer(audioBlob.value);
+    const uint8Array = new Uint8Array(arrayBuffer);
+    const fileBuffer = Array.from(uint8Array);
+
+    await invoke('download_file', {
+      path: filePath,
+      blob: fileBuffer
+    })
+  } else {
+    const link = document.createElement('a');
+    link.href = audioURL.value;
+    link.download = filename;
+    link.click();
+    link.remove();
+  }
+
 }
 </script>
 
 <template>
-  <Header v-if="is.desktop()"/>
+  <Header v-if="is.desktop()" />
   <div class="flex flex-col bg-white gap-5" :style="{
     height: `calc(100vh - ${headerHeight}px)`,
   }">

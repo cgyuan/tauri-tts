@@ -45,7 +45,7 @@ appWindow.setAlwaysOnTop(unref(alwaysOnTop))
 </script>
 
 <template>
-  <div data-tauri-drag-region class="header text-black h-35px flex justify-end bg-[var(--color-bg-1)] items-center border-b border-solid border-[var(--color-border)]">
+  <div data-tauri-drag-region class="header text-black h-35px flex justify-end bg-[var(--color-bg-1)] items-center border-b border-b-solid border-b-[var(--color-border)]">
     <img src="/tauri.svg" class="w-20px h-20px ml-2" data-tauri-drag-region v-show="is.windows()"/>
     <div class="flex-1" data-tauri-drag-region></div>
     <div class="action-btn" @click="togglePin()"><mo-icon :name="pinStatusIcon" width="12" height="12" /></div>

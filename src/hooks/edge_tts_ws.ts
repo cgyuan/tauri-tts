@@ -70,7 +70,7 @@ const useEdgeTtsWsWeb = () => {
       }
     }
 
-    return new Promise<string>((resolve, _reject) => {
+    return new Promise<Blob>((resolve, _reject) => {
       ws.addEventListener('message', async (event) => {
         const message = event.data
 
@@ -78,8 +78,7 @@ const useEdgeTtsWsWeb = () => {
           if (message.includes('Path:turn.end')) {
             ws.close()
             let audioBlob = new Blob([concatenatedData.buffer], { type: 'audio/mp3' })
-            let audioURL = URL.createObjectURL(audioBlob)
-            resolve(audioURL)
+            resolve(audioBlob)
           }
         } else if (message instanceof ArrayBuffer) {
           processAndConcatenate(message)
@@ -129,7 +128,7 @@ const useEdgeTtsWsTauri = () => {
     const rate = (settingStore.tts.rate - 1) * 100
     const pitch = (settingStore.tts.pitch - 1) * 50
 
-    return new Promise<string>(async (resolve, _reject) => {
+    return new Promise<Blob>(async (resolve, _reject) => {
       let ws = await WebSocketTauri.connect(url, {
         headers: {
           "User-Agent":
@@ -180,8 +179,7 @@ const useEdgeTtsWsTauri = () => {
             ws.disconnect()
             console.log('end', text)
             let audioBlob = new Blob([concatenatedData.buffer], { type: 'audio/mp3' })
-            let audioURL = URL.createObjectURL(audioBlob)
-            resolve(audioURL)
+            resolve(audioBlob)
           }
         }
       })
@@ -197,13 +195,13 @@ const useEdgeTtsWsTauri = () => {
 
 export const useEdgeTtsWs = () => {
 
-  const processAudioText = async (text: string) => {
+  const processAudioText = (text: string) => {
     if (is.desktop()) {
       const { processAudioText: h } = useEdgeTtsWsTauri()
-      return await h(text)
+      return h(text)
     } else {
       const { processAudioText: h } = useEdgeTtsWsWeb()
-      return await h(text)
+      return h(text)
     }
   }
   

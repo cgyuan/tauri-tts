@@ -16,7 +16,7 @@ const { selectedLanguage } = storeToRefs(settingStore);
 
 
 const appStore = useAppStore();
-const { text, audioURL } = storeToRefs(appStore);
+const { text, audioURL, audioBlob } = storeToRefs(appStore);
 const { processAudioText } = useTTS();
 
 const handleLanguageChange = (lang: any) => {
@@ -31,9 +31,9 @@ const onPopupVisibleChange = (visible: boolean) => {
 const startConvert = async () => {
   isConverting.value = true;
   try {
-    const audioUrl = await processAudioText(text.value);
-    audioURL.value = audioUrl;
-    console.log(audioUrl);
+    const blob = await processAudioText(text.value);
+    audioURL.value = URL.createObjectURL(blob);
+    audioBlob.value = blob;
   } catch (error) {
     console.log(error);
   }

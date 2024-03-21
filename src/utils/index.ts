@@ -37,4 +37,15 @@ export function getRandomBytes(size: number) {
   return Array.from(bytes, byte => byte.toString(16).padStart(2, '0')).join('');
 }
 
+export function blobToArrayBuffer(blob: Blob) {
+  return new Promise<ArrayBuffer>((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      resolve(reader.result as ArrayBuffer);
+    };
+    reader.onerror = reject;
+    reader.readAsArrayBuffer(blob);
+  });
+}
+
 
