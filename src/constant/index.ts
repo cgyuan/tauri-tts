@@ -13,5 +13,7 @@ export const OPENAI_TTS_VOICES = [
 
 export const OPENAI_TTS_MODES = [
   'tts-1',
-  'tts-1-hd'
+  'tts-1-hd',
+  'tts-1-1106',
+  'tts-1-hd-1106'
 ]
