@@ -5,14 +5,39 @@ import { getRandomBytes } from "../utils"
 import WebSocketTauri from "tauri-plugin-websocket-api"
 
 
+async function genSecMsGec(): Promise<string> {
+  // Get current time in seconds and adjust
+  let sec = Math.floor(Date.now() / 1000)
+  sec += 11644473600
+  sec -= (sec % 300)
+
+  // Calculate nsec (converting to nanoseconds and dividing by 100)
+  const nsec = Math.floor(sec * 1e9 / 100)
+
+  // Create the string to hash
+  const str = `${nsec}6A5AA1D4EAFF4E9FB37E23D68491D6F4`
+
+  // Create SHA-256 hash
+  const encoder = new TextEncoder()
+  const data = encoder.encode(str)
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data)
+
+  // Convert to hex string
+  const hashArray = Array.from(new Uint8Array(hashBuffer))
+  const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('')
+
+  return hashHex.toUpperCase()
+}
+
+
 const useEdgeTtsWsWeb = () => {
   const settingStore = useSettingStore()
 
-  const processAudioText = (text: string) => {
+  const processAudioText = async (text: string) => {
 
     const connectionId = getRandomBytes(16).toLowerCase()
 
-    const url = `wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=${connectionId}`
+     const url = `wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=${await genSecMsGec()}&Sec-MS-GEC-Version=1-131.0.2903.51&ConnectionId=${connectionId}`
     let format = "audio-24khz-48kbitrate-mono-mp3"
     let configData = {
       context: {
@@ -96,9 +121,9 @@ const useEdgeTtsWsWeb = () => {
 const useEdgeTtsWsTauri = () => {
   const settingStore = useSettingStore()
 
-  const processAudioText = (text: string) => {
+  const processAudioText = async (text: string) => {
     const connectionId = getRandomBytes(16).toLowerCase()
-    let url = `wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=${connectionId}`
+    const url = `wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=${await genSecMsGec()}&Sec-MS-GEC-Version=1-131.0.2903.51&ConnectionId=${connectionId}`
 
     // let pattern = /X-RequestId:(?<id>[a-z|0-9]*)/
     // const decoder = new TextDecoder('ascii')
@@ -204,7 +229,7 @@ export const useEdgeTtsWs = () => {
       return h(text)
     }
   }
-  
+
   return {
     processAudioText
   }
